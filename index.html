@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- головне зображення сайту -->
+	<meta property="og:image" content="#"/>
+	<title>map</title>
+</head>
+<body>
+<h1>
+	<img src="img/logo.png" width="200px" alt="">
+</h1>
+	<ul class='count_ul'>
+		<li>
+			<a href="main.html" target="blanck">
+				main
+			</a>
+		</li>
+		<li>
+			<a href="about.html" target="blanck">
+				about
+			</a>
+		</li>
+		<li>
+			<a href="form-test.html" target="blanck">
+				form-test
+			</a>
+		</li>
+		<li>
+			<a href="contact-us.html" target="blanck">
+				contact-us
+			</a>
+		</li>
+	</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			font-family: Arial;
+		}
+		h1{
+			text-align: center;
+			margin: 10px 0;
+		}
+		ul.count_ul{
+			margin: 0;
+			width: 400px;
+			margin: auto;
+			border-top: 1px solid #ccc;
+			counter-reset: list1;
+			margin-bottom: 40px;
+		}
+		ul.count_ul > li{
+			list-style: none;
+			margin-bottom: 0px;
+			border: 1px solid #ccc;
+			border-top: none;
+			width: 100%;
+		}
+		ul.count_ul > li > a:before{
+			counter-increment: list1;
+			content: counter(list1) ". ";
+		}
+		a{
+			font-size: 18px;
+			color: #15669F;
+			text-decoration: none;
+			display: block;
+			padding: 6px 10px;
+		}
+		a:hover{
+			text-decoration: underline;
+		}
+		ul.count_ul > li ul li{
+			list-style: none;
+			padding-left: 40px;
+			border-top: 1px solid #ccc;
+		}
+		ul.count_ul > li ul{
+			counter-reset: list2;
+		}
+		ul.count_ul > li ul a:before{
+			counter-increment: list2;
+			content: counter(list2) ". ";
+		}
+		p{
+			color: #f00;
+			padding: 4px 10px;
+		}
+	</style>
+</body>
+</html>
